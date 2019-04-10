@@ -2,18 +2,36 @@
   position: relative;
   width: 600px;
   height: 600px;
+  text-align: center;
+  margin-left: 25%;
 }
 
 #canvas {
   position: absolute;
+  display: block;
 }
-
-button {
+#newGame {
+  margin-top: 610px;
+}
+.board {
   position:absolute;
   height: 190px;
-  width:190px;
-  background-color: #FFFFFF00;
+  width: 190px;
+  background-color: #FFFFFF;
   border: none;
+
+}
+.jumbotron {
+  width: 600px;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.card {
+  text-align: left;
+  border-radius: 25px;
+  display: inline-block;
+  width:120px;
 }
 #topLeft{
   left:5px;
