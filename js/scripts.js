@@ -20,6 +20,7 @@ var coords = [{id: "topLeft", x: 0, y: 0, player: 'none'},
               {id: "botLeft", x: 0, y: 400, player: 'none'},
               {id: "botMid", x: 200, y: 400, player: 'none'},
               {id: "botRight", x: 400, y: 400, player: 'none'}]
+
 // Baseline score for both X and O
 var exScore = 0;
 var ohScore = 0;
@@ -29,8 +30,10 @@ $().ready(function() {
 //This will setup our canvas
   var canvas = $("#canvas").get(0);
   var context = canvas.getContext("2d");
+  background.onload=function(){
+    context.drawImage(background, 0, 0, canvas.width, canvas.height);
+  }
 
-  context.drawImage(background, 0, 0, canvas.width, canvas.height);
 
   //Register Event Handlers
     $("button").click(function(){
