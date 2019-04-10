@@ -1,0 +1,53 @@
+.canvasContainer{
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+#canvas {
+  position: absolute;
+}
+
+button {
+  position:absolute;
+  height: 190px;
+  width:190px;
+  background-color: #FFFFFF00;
+  border: none;
+}
+#topLeft{
+  left:5px;
+  top:5px;
+}
+#topMid{
+  left:205px;
+  top:5px;
+}
+#topRight{
+  left:405px;
+  top:5px;
+}
+#midLeft{
+  left:5px;
+  top:205px;
+}
+#midMid{
+  left:205px;
+  top:205px;
+}
+#midRight{
+  left:405px;
+  top:205px;
+}
+#botLeft{
+  left:5px;
+  top:405px;
+}
+#botMid{
+  left:205px;
+  top:405px;
+}
+#botRight{
+  left:405px;
+  top:405px;
+}
