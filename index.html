@@ -12,6 +12,25 @@
     <div class="jumbotron">
       <h1>Tic-Tac-Toe</h1>
     </div>
+    <div class="nameEntry">
+      <div class="row" id="topRow">
+        <div class="col-md-4" id="oneCol">
+          <div class="form-group">
+            <label for="playerOne">Player 1</label>
+            <input type="text" class="form-control" name="playerOne" value="" id="playerOne">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button type="button" name="button" id="firstStart">Start</button>
+        </div>
+        <div class="col-md-4" id="twoCol">
+          <div class="form-group">
+            <label for="playerTwo">Player 2</label>
+            <input type="text" class="form-control" name="playerTwo" value="" id="playerTwo">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="canvasContainer">
       <canvas id="canvas" width="600" height="600"></canvas>
       <button class="board" type="button" name="button" id="topLeft"></button>
@@ -27,6 +46,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card">
+            <div class="card-header">
+              <h4 id="playerOneName"></h4>
+            </div>
             <div class="card-body">
               <h1>X: <span id="xscore"></span></h1>
             </div>
@@ -34,6 +56,9 @@
         </div>
         <div class="col-md-6">
           <div class="card">
+            <div class="card-header">
+              <h4 id="playerTwoName"></h4>
+            </div>
             <div class="card-body">
               <h1>O: <span id="oscore"></span></h1>
             </div>

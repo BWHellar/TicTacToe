@@ -1,9 +1,19 @@
 .canvasContainer{
-  position: relative;
+  display: none;
+  position:  sticky;
   width: 600px;
   height: 600px;
   text-align: center;
-  margin-left: 25%;
+  margin-left: 37%;
+  justify-content: center;
+  align-items: center;
+}
+#topRow{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 38%;
+  position: absolute;
 }
 
 #canvas {
@@ -12,6 +22,7 @@
 }
 #newGame {
   margin-top: 610px;
+
 }
 .board {
   position:absolute;
@@ -23,15 +34,21 @@
 }
 .jumbotron {
   width: 600px;
-  margin-left: 25%;
+  margin-left: 37%;
   text-align: center;
 }
 
 .card {
   text-align: left;
-  border-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border
   display: inline-block;
   width:120px;
+  margin-left: 30%;
+}
+.card-header {
+  border-radius: 25px;
 }
 #topLeft{
   left:5px;

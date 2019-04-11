@@ -36,13 +36,29 @@ $().ready(function() {
 
 
   //Register Event Handlers
-    $("button").click(function(){
-      drawXO(this.id);
-      $("#"+this.id).hide();
+
+    $("#firstStart").click(function(){
+
+      var playerOne = $("#playerOne").val();
+      var playerTwo = $("#playerTwo").val();
+
+      if(!playerOne || !playerTwo){
+        alert("Please enter names")
+      }
+      else if (playerOne && playerTwo){
+        $('.nameEntry').fadeOut();
+        $(".canvasContainer").fadeIn();
+        $("#playerOneName").text(playerOne);
+        $("#playerTwoName").text(playerTwo);
+      }
     });
 
-    $("#newGame").click(function(){
+    $(".board").click(function(){
+      drawXO(this.id);
+      $("#"+this.id).hide();
+    })
 
+    $("#newGame").click(function(){
       newGame();
     });
 // New game
